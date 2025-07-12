@@ -16,18 +16,212 @@ code {
 }
 
 .mobile-container {
-  max-width: 360px;
+  width: 360px;
   height: 100vh;
-  background-color: #F9FAFB;
+  background-color: #ffffff;
   margin: 0 auto;
   overflow: auto;
 }
 
-
-.home-page,
-.crew-page,
-.my-travel-page,
-.chatting-page,
-.my-page {
+.main-container {
   width: 360px;
+  height: 100vh;
+  background-color: #ebebeb;
+  padding-bottom: '80px';
+}
+
+.login-page {
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222222;
+  font-weight: 600;
+  margin: 28px 0 0 20px;
+}
+
+.login-form {
+  padding: 0 20px;
+  margin-top: 32px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  color: #333333;
+  font-size: 20px;
+  box-sizing: border-box;
+  line-height: 30px;
+  font-weight: 600;
+  border-bottom: 1px solid #dddddd;
+}
+
+.form-group input::placeholder {
+  color: #cccccc;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group .error-message {
+  color: #FF6060;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.form-group .error-message-container {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  gap: 4px;
+  min-height: 20px;
+  vertical-align: middle;
+}
+
+.form-group .error-message-container svg {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-group .error-message-container span {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.password-reset a {
+  margin-top: 8px;
+  color: #666666;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.social-login-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.social-login-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-login-button.kakao {
+  background-color: #FDE500;
+}
+
+.social-login-button.never {
+  background-color: #03C75A;
+}
+
+.social-login-button.apple {
+  background-color: #000000;
+}
+
+.social-login-button.google {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.login-button {
+  position: fixed;
+  padding: 18px;
+  bottom: 24px;
+  width: 100%;
+  background-color: #cccccc;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 280px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.login-button.active {
+  background-color: #222222;
+}
+
+.back-image-container {
+  height: 40px;
+  padding: 10px 16px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  background-color: #dcdcde;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 24px;
+}
+
+.home-hi-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 40px;
+  margin-top: 8px;
+}
+
+.home-header-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  flex: 1;
+  padding: 16px;
+  display: flex;
 }
